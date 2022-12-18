@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- container -->
+    <div class="container">
+        <!-- Login Form -->
+        <form action="" class="formContainer " id="loginContainer">
+            <h1 class="formTitle">Login</h1>
+            <div class="userContainer">
+                <input id="input1" type="email" class="usernameInput" required placeholder="Username">
+                <div id="alert1" class="alertText">Incorrect Username</div>
+            </div>
+            <div class="passwordContainer">
+                <input id="input2" type="password" class="passwordInput" required placeholder="Password">
+                <div id="alert2" class="alertText">Your password must be at least 6 characters</div>
+            </div>
+            <button class="btn" id="btn1" type="submit">Submit</button>
+            <p class="links" id="forgotLink">
+                <a id="forgotLinkId" href="#">Forgot My Password</a>
+            </p>
+            <p class="links" id="newAccountLink">
+                <a id="createAccountLinkId" href="#">Create an Account</a>
+            </p>
+        </form>
+        <!-- Sign Up Form -->
+        <form action="" class="formContainer hiddenForm  " id="signUpContainer">
+            <h1 class="formTitle">Create Account</h1>
+            <div class="alertText">Hatalı Giriş</div>
+            <div class="userContainer">
+                <input type="text" class="usernameInput" required placeholder="Username">
+                <div class="alertText">Incorrect Username</div>
+            </div>
+            <div class="userContainer">
+                <input type="email" class="usernameInput" required placeholder="Email">
+                <div class="alertText">Incorrect email</div>
+            </div>
+            <div class="passwordContainer">
+                <input type="password" class="passwordInput" required placeholder="Password">
+
+            </div>
+            <div class="passwordContainer">
+                <input type="password" class="passwordInput" required placeholder="Password Repeat">
+
+            </div>
+            <button class="btn" id="btn2" type="submit">Create</button>
+            <p class="links" id="loginLink">
+                <a id="havingAccountLinkId" href="#">I already have an Account</a>
+            </p>
+        </form>
+        <!-- Forgot Form -->
+        <form action="" class="formContainer hiddenForm " id="forgotContainer">
+            <h1 class="formTitle">I Forgot My Password</h1>
+            <div class="alertText">invalid email</div>
+            <div class="userContainer">
+                <input type="email" class="usernameInput" required placeholder="Please enter your email">
+                <button class="btn" id="btn3" type="submit">Continue</button>
+                <p class="links" id="newAccountLink">
+                    <a id="backLinkId" href="#">Back</a>
+                </p>
+        </form>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
